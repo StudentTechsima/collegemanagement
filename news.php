@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/all.css">
 </head>
+
 <body>
     <script src="js/fontawesome.min.js"></script>
     <section class="hint-section">
