@@ -58,6 +58,7 @@
     <section>
         <div class="container">
             <h3>Research & Pedagogy</h3>
+            <h3>Research & Pedagogy</h3>
             <h1>How It Works?</h1>
             <p>Proin ac lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae, mollis nec ante. Quisque aliquam dictum condim.</p>
             <div class="research-box"></div>
