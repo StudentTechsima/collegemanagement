@@ -70,6 +70,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae recusandae dolor nulla animi incidunt nihil, repudiandae rem eveniet quibusdam fugit.</p>
                     <h4><b>Techsima-9:  18/01/2024</b></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae recusandae dolor nulla animi incidunt nihil, repudiandae rem eveniet quibusdam fugit.</p>
+                    <h4><b>Techsima-9:  18/01/2024</b></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae recusandae dolor nulla animi incidunt nihil, repudiandae rem eveniet quibusdam fugit.</p>
                 </marquee>
             </div>
         </div>
