@@ -42,5 +42,8 @@
             <a href="index.html"><span>ACADEMICS > </span></a>  <a href="#"><span>DEPARTMENTS</span></a>
         </div>
     </section>
+    <section>
+        <h1>My name is priyanka</h1>
+    </section>
 </body>
 </html>
