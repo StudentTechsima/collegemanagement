@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Management</title>
     <link rel="icon" href="images/managment-software-2048x2048.png">
-    <link rel="stylesheet" href="css/userStyle.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>

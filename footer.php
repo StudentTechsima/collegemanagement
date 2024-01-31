@@ -48,13 +48,9 @@
     </footer>
 <!-- -----------------------------------------Footer Section End---------------------------------------- -->
 <script src="js/all.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init({
-        offset: 120,
-        duration: 1000,
-    });
-    </script>
+<script src="js/js/lightbox-plus-jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/js/lightbox.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
