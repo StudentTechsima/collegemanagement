@@ -3,6 +3,14 @@
     padding: 0%;
     box-sizing: border-box;
 }
+:root {
+    --primaryColor: #50623A;
+    --secondaryColor: #294B29;
+    --primaryTextColor: #dcf4ff;
+    --secondaryTextColor: #c3b8ff;
+    --bg: #DBE7C9;
+    --nav: #2e3440;
+}
 section{
     width: 100%;
     display: flex;
@@ -11,7 +19,7 @@ section{
 }
 .hint-section{
     width: 100%;
-    background: rgba(255,0,0,0.3);
+    background: var(--primaryColor);
 }
 .hint{
     height: 100px;
@@ -22,7 +30,7 @@ section{
 }
 .hint a{
     text-decoration: none;
-    color: #f00;
+    color:var(--secondaryColor);
     font-size: 25px;
 }
 .container1{
@@ -36,7 +44,7 @@ section{
 }
 h1{
     font-size: 40px;
-    color: #f00;
+    color: var(--secondaryColor);
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -70,7 +78,7 @@ img{
     height: 100%;
     width: 100%;
     padding: 5px;
-    box-shadow: 0px 0px 5px 5px rgba(255,0,0,0.6);
+    box-shadow: 0px 0px 5px 5px var( --primaryTextColor);
     border-radius: 20px;
 }
 img:hover{
@@ -78,7 +86,7 @@ img:hover{
 }
 .container-box1 h4 a{
     text-decoration: none;
-    color: rgba(255,0,0,0.6);
+    color: var( --secondaryColor);
     line-height: 40px;
 }
 .container-lalest-new{
@@ -89,7 +97,7 @@ img:hover{
 .latest-new-heading{
     width: 100%;
     height: 50px;
-    background: rgba(255,0,0,0.5);
+    background: var( --secondaryColor);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -99,7 +107,7 @@ img:hover{
     width: 100%;
     height: 400px;
     padding: 30px 50px;
-    background: rgba(255,0,0,0.2);
+    background: var(--primaryColor);
     border-radius: 0px 0px 40px 40px;
 }
 marquee{
