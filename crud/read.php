@@ -1,6 +1,6 @@
 <?php
     include 'dbconnect1.php';
-    $sql="SELECT * FROM signform";
+    $sql="SELECT * FROM signupdata";
     $result=mysqli_query($con,$sql);
 ?>
 <!DOCTYPE html>
@@ -24,21 +24,26 @@
     <!-- <a href="creata.php"><button>Add Data</button></a> -->
     <table border="1">
         <tr>
-            <th>#Roll_No</th>
-            <th>Name</th>
+            <th>#Id</th>
+            <th>F_Name</th>
+            <th>L_Name</th>
             <th>Email</th>
-            <th>Password</th>
+            <th>N_Password</th>
+            <th>C_Password</th>
+            <th>Action</th>            
         </tr>
         <?php  
             if($result->num_rows > 0){
                 while($row = $result->fetch_assoc()){
         ?>
         <tr>
-            <td><?php echo $row['Roll_No'] ?></td>
-            <td><?php echo $row['Name'] ?></td>
+            <td><?php echo $row['Id'] ?></td>
+            <td><?php echo $row['F_Name'] ?></td>
+            <td><?php echo $row['L_Name'] ?></td>
             <td><?php echo $row['Email'] ?></td>
-            <td><?php echo $row['Password'] ?></td>
-           <td><a href="update.php?rollnumber=<?php echo $row['Roll_No'];?>"><button>Edit</button></a><a href="delete.php?rollnumber=<?php echo $row['Roll_No'];?>"><button>Delete</button></a></td>
+            <td><?php echo $row['N_Password'] ?></td>
+            <td><?php echo $row['C_Password'] ?></td>
+           <td><a href="update.php?id=<?php echo $row['Id'];?>"><button>Edit</button></a><a href="delete.php?id=<?php echo $row['Id'];?>"><button>Delete</button></a></td>
         </tr>
         <?php 
                 }

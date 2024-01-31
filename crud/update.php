@@ -2,11 +2,13 @@
     include 'dbconnect1.php';
     #  for update---
     if(isset($_POST['update'])){
-        $rollnumber=$_POST['rollnumber']?$_POST['rollnumber']:'';
-        $name=$_POST['name']?$_POST['name']:'';
+        $id=$_POST['id']?$_POST['id']:'';
+        $fname=$_POST['fname']?$_POST['fname']:'';
+        $lname=$_POST['lname']?$_POST['lname']:'';
         $email=$_POST['email']?$_POST['email']:'';        
-        $password=$_POST['password']?$_POST['password']:'';
-        $sql="UPDATE signform SET Name='$name',Email='$email',Password='$password' WHERE Roll_No=$rollnumber";
+        $npassword=$_POST['npassword']?$_POST['npassword']:'';
+        $cpassword=$_POST['cpassword']?$_POST['cpassword']:'';
+        $sql="UPDATE signupdata SET F_Name='$fname',L_Name='$lname',Email='$email',N_Password='$npassword',C_Password='$cpassword' WHERE Id=$id";
         if(mysqli_query($con,$sql)){
             header('Location:read.php?success=Record Updated SuccessFully');
         }else{
@@ -14,17 +16,20 @@
         }
     }
     #   get 
-    if(isset($_GET['rollnumber'])){
-    $id=$_GET['rollnumber'];
-    $selectsql="SELECT * FROM signform WHERE Roll_No=$rollnumber";
+    if(isset($_GET['id'])){
+    $id=$_GET['id'];
+    $selectsql="SELECT * FROM signupdata WHERE Id=$id";
     $res=mysqli_query($con,$selectsql);
     if($res->num_rows > 0){
         while($row = $res->fetch_assoc()){
-            $name=$row['Name'];
+            $fname=$row['F_Name'];
+            $lname=$row['L_Name'];
             $email=$row['Email'];
-            $password=$row['Password'];
+            $npassword=$row['N_Password'];
+            $cpassword=$row['C_Password'];
         }
     }
+}    
 
 ?>
 <!DOCTYPE html>
@@ -208,23 +213,26 @@
                     <h1>SignUp </h1>
                     <div class="full-name">
                         <div class="fname">
-                            <input type="text"name="firstname" value="<?php echo $name; ?>" placeholder="Enter Your First Name*">
+                            <input type="text"name="fname" value="<?php echo $fname; ?>" placeholder="Enter Your First Name*">
                         </div>
                         <div class="lname">
-                            <input type="text"name="lastname" value="<?php echo $name; ?>" placeholder="Enter Your Last Name*">
+                            <input type="text"name="lname" value="<?php echo $lname; ?>" placeholder="Enter Your Last Name*">
                         </div>
                     </div>
+                    <!--  --------------Hidden input start-------------->
+                                <input type="hidden"value="<?php echo $id; ?>" name="id">
+                    <!-- ----------Hidden input end------------------ -->
                     <div class="email-box">
                         <input type="email"name="email" value="<?php echo $email; ?>" placeholder="Enter Your Email Id*">
                     </div>
                     <div class="n-password">
-                        <input type="password"name="password" value="<?php echo $password; ?>" placeholder="Enter Your Password*">
+                        <input type="password"name="npassword" value="<?php echo $npassword; ?>" placeholder="Enter Your Password*">
                     </div>
                     <div class="con-password">
-                        <input type="password"name="password" value="<?php echo $password; ?>" placeholder="Enter Your Password*">
+                        <input type="password"name="cpassword" value="<?php echo $cpassword; ?>" placeholder="Enter Your Conform Password*">
                     </div>
                     <div class="check-box">
-                        <input type="checkbox"> <span>I accept the Terms of use & privacy policy</span>
+                        <input type="checkbox"required > <span>I accept the Terms of use & privacy policy</span>
                     </div>
                     <div class="signup-btn">
                         <button type="submit" value="update" name="update">update</button>
@@ -236,6 +244,3 @@
     </section> 
 </body>
 </html>
-<?php }else{
-    header('Location:read.php');
-}?>

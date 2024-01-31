@@ -10,11 +10,15 @@
     <section>
         <div class="container">
             <div class="box">
+                <!-- ---------------SignUp Start------------------ -->
                 <form action="crud/createpost.php" method="post" class="form1">
                     <h1>SignUp </h1>
                     <div class="full-name">
                         <div class="fname">
-                            <input type="text"name="name"placeholder="Enter Your First Name*">
+                            <input type="text"name="fname"placeholder="Enter Your First Name*">
+                        </div>
+                        <div class="lname">
+                            <input type="text"name="lname"placeholder="Enter Your Last Name*">
                         </div>
                        
                     </div>
@@ -22,13 +26,13 @@
                         <input type="email"name="email"placeholder="Enter Your Email Id*">
                     </div>
                     <div class="n-password">
-                        <input type="password"name="password"placeholder="Enter Your Password*">
+                        <input type="password"name="npassword"placeholder="Enter Your Password*">
                     </div>
                     <div class="con-password">
-                        <input type="password"name="password"placeholder="Enter Your Password*">
+                        <input type="password"name="cpassword"placeholder="Enter Your Password*">
                     </div>
                     <div class="check-box">
-                        <input type="checkbox"> <span>I accept the Terms of use & privacy policy</span>
+                        <input type="checkbox"required > <span>I accept the Terms of use & privacy policy</span>
                     </div>
                     <div class="signup-btn">
                         <button type="submit" name="submit">submit</button>
@@ -37,6 +41,10 @@
                         <span>Already have an Account? </span> <b onclick="signinToForm2()">SignIn</b>
                     </div>
                 </form>
+
+<!------------------------------SignUp End---------------------------------------- -->
+
+<!-- -------------------------SignIn Start---------------------- -->
 
                 <form action="" method="post" class="form2">
                     <h1>SignIn</h1>
@@ -56,6 +64,7 @@
                         <span>Don't have an Account? </span> <b onclick="signupToForm1()">SignUp</b>
                     </div>
                 </form>
+                <!-- ------------------------------SignIn End------------------------------------ -->
             </div>
         </div>
     </section>
