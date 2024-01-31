@@ -42,5 +42,9 @@
             <a href="index.html"><span>ACADEMICS > </span></a>  <a href="#"><span>DEPARTMENTS</span></a>
         </div>
     </section>
+    <section>
+        <h1>dependra</h1>
+        <h2>singh rana</h2>
+    </section>
 </body>
 </html>
