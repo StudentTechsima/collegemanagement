@@ -180,22 +180,32 @@ a:hover{
 /* --------------------------Logo Section End-------------------------------------- */
 
 /* ---------------------------------Landing Section Start------------------------------------------- */
-.manubar{
+.menu{
     height: 50px;
     width: 100%;
     background: var(--primaryColor);
     border-top: 0.5px;
     border-bottom: 0.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-ul{
+.manubar{
+    height: 100%;
+    width: 100%;
+    background: var(--primaryColor);
+    border-top: 0.5px;
+    border-bottom: 0.5px;
+    padding: 0% 10%;
+}
+.manubar ul{
     list-style-type:none;
-    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:5px;
 }
 li{
-    float: left;
+    padding: 10px 20px;
     color: var(--primaryColor);
 }
 li:hover{
@@ -203,7 +213,6 @@ li:hover{
     color: var(--primaryColor);
 }
 .link{
-    padding: 15px 25px;
     color: #fff;
 }
 li:hover a{
@@ -381,7 +390,7 @@ footer{
 }
 @media screen and (max-width: 1080px){
     .link{
-        padding: 15px 10px;
+        padding: 15px 7px;
         font-size: 14px;
     }
     .footer-content-box{

@@ -47,7 +47,7 @@
     <!--------------------------------Logo Section End---------------------------------->
 
     <!----------------------------------Landing Section Start----------------------------------->
-    <section>
+    <section class="menu">
         <div class="manubar">
             <ul>
                 <a href="" class="home"><li class="link home">HOME</li></a>
