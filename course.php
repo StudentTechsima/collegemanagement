@@ -1,4 +1,4 @@
-<?php include "css/index.css"; ?>
+<?php include "header.php"; ?>
     <!-- slider start -->
     <div>
         <img src="image/ag-bg.jpg" id="img">
@@ -52,4 +52,4 @@
         </div>
     </section>
     <!-- course end-->
-<?php include "css/index.css"; ?>
+<?php include "footer.php"; ?>
