@@ -473,3 +473,32 @@ footer{
         display: none;
     }
 }
+
+/*---------------------------FAQ COde stsart*/
+.hero-faq{
+    height: 70vh;
+    width: 100%;
+    background:linear-gradient(135deg,#fff,#6b8351);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+.hero-faq img{
+    height: 85%;
+    width: auto;
+}
+.accordion-header .button-change:focus {
+    z-index: 3;
+    color:#000 !important;
+    border-color: none !important; 
+    outline: 0;
+    box-shadow: none !important;
+}
+.accordion-header .button-change:not(.collapsed) {
+    color: var(--bs-accordion-active-color); 
+    background-color: #e3f1f1 !important; 
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
